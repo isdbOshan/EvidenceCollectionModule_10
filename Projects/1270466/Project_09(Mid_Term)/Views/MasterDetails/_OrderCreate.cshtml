@@ -1,0 +1,20 @@
+﻿@model  Project_09_Mid_Term_.Models.Computer
+@for (var i = 0; i < Model.OrderItems.Count; i++)
+{
+    <div class="col-4">
+        <label>Quantity</label>
+        @Html.TextBoxFor(x => Model.OrderItems[i].Quantity, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => Model.OrderItems[i].Quantity, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group row mb-3">
+        @Html.LabelFor(b => b.OrderItems[i].OrderId,  new { @class = "col-form-label col-2" })
+        <div class="col-10">
+            @Html.DropDownListFor(b => b.OrderItems[i].OrderId, new SelectList(ViewBag.Order, "OrderId", "OrderDate"), "Select One", new { @class = "form-select" })
+            @Html.ValidationMessageFor(b => b.OrderItems[i].OrderId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-2">
+
+        <button class="btn btn-danger btn-sm mt-4" type="button">Remove</button>
+    </div>
+}

@@ -1,0 +1,153 @@
+﻿@model Project_09_Mid_Term_.Models.Computer
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div id="Load" style="display:none">
+    Loading.....
+</div>
+<div class="col-12" id="msg">
+
+</div>
+@using (Ajax.BeginForm("Edit", "Computers", new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "msg",
+    HttpMethod = "Post",
+    LoadingElementId = "Load",
+    OnSuccess = "onSuccess",
+    OnFailure = "OnFailure"
+}, new { id = "frm" }))
+{
+
+    <div class="form-horizontal">
+        <h4>Add New Computers</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(x => x.ComputerId)
+        <div class="form-group">
+            @Html.LabelFor(model => model.ComputerName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ComputerName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ComputerName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MGFDate, htmlAttributes: new { @class = "control-label col-md-2 date" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.MGFDate, new { @class = "form-control date" })
+                @Html.ValidationMessageFor(model => model.MGFDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Picture, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" id="img" class=" form-control" />
+                @Html.HiddenFor(model => model.Picture, new { value = "" })
+                @Html.ValidationMessageFor(model => model.Picture, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-secondary btn-sm mt-4" type="button" id="add">Add</button>
+        </div>
+        <div id="order" class=" row">
+            <h4>Add Order</h4>
+            @Html.Action("EditOrder")
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class=" btn btn-primary btn-sm">Save</button>
+            </div>
+        </div>
+    </div>
+}
+
+<img src="~/Uploads/" class="img-thumbnail" style="width:200px;" />
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+        $(".date").datepicker({
+            format: "yyyy-mm-dd"
+        });
+        $("#add").click(() => {
+            $.ajax({
+                type: "Post",
+                url: "/Computers/EditOrder",
+                catch: false,
+                data: $("#frm").serialize(),
+                success: r => {
+                    $("#order").html(r);
+                    $("#frm").tigger('reset');
+
+                }
+            })
+        })
+        $("#img").change(() => {
+            if (document.getElementById("img").files.length) {
+                $("#Picture").val(document.getElementById("img").files[0].name);
+            }
+        });
+        $(document).on("click", "button.del", function () {
+            var i = $(this).data("index");
+            $.ajax({
+                type: "POST",
+                url: "/Computers/AddOrder?index=" + i,
+                cache: false,
+                data: $("#frm").serialize(),
+                success: r => {
+                    $("#orderItems").html(r);
+                    $("form").removeData("validator");
+                    $("form").removeData("unobtrusiveValidation");
+                    $.validator.unobtrusive.parse("form");
+
+                }
+            });
+        })
+        function onSuccess(r) {
+            if (r) {
+                console.log(r);
+                var formData = new FormData();
+                if (document.getElementById("img").files.length > 0) {
+                    formData.append("Picture", document.getElementById("img").files[0]);
+                    console.log(formData);
+                    $.ajax({
+                        type: "POST",
+                        url: "/Computers/Image/" + r.id,
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: ss => {
+                            console.log(ss);
+                            alert("Data saved");
+                        },
+                        error: err1 => {
+                            console.log(err1);
+                        }
+                    });
+                }
+            }
+        }
+        function OnFailure(err) {
+
+        }
+    </script>
+}

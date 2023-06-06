@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            padding-top: 0px;
+        }
+    </style>
+    @RenderSection("styles", false)
+</head>
+<body>
+    <div class="navbar bg-info text-white navbar-expand-sm navbar-fixed-top shadow-sm border-bottom">
+        <div class="container-fluid">
+            <span class="navbar-brand">EmployeeManagement</span>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        @Html.ActionLink("Home", "Index", "Home", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("MasterDetail", "Index", "Employees", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Position", "Index", "Positions", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Team", "Index", "Teams", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Reports</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>@Html.ActionLink("Employee Report", "Index", "Crystal", new { }, new { @class = "dropdown-item" })</li>
+                            <li>@Html.ActionLink("Employee Experience Report", "EmployeeExperienceReport", "Crystal", new { }, new { @class = "dropdown-item" })</li>
+                            <li>@Html.ActionLink("Employee Team Report", "TeamReport", "Crystal", new { }, new { @class = "dropdown-item" })</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ms-auto ">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Logout", "Logout", "Account", new { }, new { @class = "nav-link" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Register", "Register", "Account", new { }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Login", "Login", "Account", new { }, new { @class = "nav-link" })
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid" style="min-height:calc(100vh - 110px)">
+        @RenderBody()
+    </main>
+    <footer class="container-fluid bg-info">
+        <p>&copy; @DateTime.Today.ToString("MMM dd, yyyy") - My ASP.NET Employee Management Application</p>
+    </footer>
+
+    @RenderSection("scripts", false)
+</body>
+</html>

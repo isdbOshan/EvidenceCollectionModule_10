@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Project_8_1270809.Models.Trainee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<dv class="row">
+    <div class="col-12">
+        <h3>MaterDetails</h3>
+        @*@Html.ActionLink("Create", "Create", "MasterDetails", new { }, new { @class = "btn btn-success" })*@
+        <table class="table table-bordered table-striped">
+            <thead class="table-striped">
+                <tr>
+                    <th>Traine Name </th>
+                    <th>Date Of Birth </th>
+                    <th>Admition Fee </th>
+                    <th>On Addmited </th>
+                    <th>Picture</th>
+                    <th>Edit/Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.TraineeId">
+                        <td>@t.TraineeName</td>
+                        <td>@t.DateOfBirth</td>
+                        <td>@t.AdmitionFee</td>
+                        <td>@t.OnAddmited</td>
+                        <td>
+                            <img src="~/Uploads/@t.Picture" style="width:60px" alt="Alternate Text" />
+                        </td>
+                        <td>
+                            @*@Html.ActionLink("Edit", "Edit", new { id = t.TraineeId }, new { @class = "btn btn-sm btn-outline-success" })*@
+                            @Ajax.ActionLink("Delete", "Delete", new { id = t.TraineeId }, new AjaxOptions
+                       { HttpMethod = "Post", OnSuccess = "OnSuccess", Confirm = "Are you sure to Delete?" }, new { @class = "btn btn-sm btn-outline-danger" })
+                        </td>
+                    </tr>
+                   
+
+                }
+            </tbody>
+        </table>
+    </div>
+</dv>
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function OnSuccess(r) {
+            $("#tr_" + r).remove();
+        }
+    </script>
+}

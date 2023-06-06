@@ -1,0 +1,461 @@
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve --port 44473",
+    "build": "ng build",
+    "build:ssr": "ng run Project1:server:dev",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+
+ng new ClientApp --skip-tests --routing true --style css
+
+ng add @angular/material
+npm i ng-material-multilevel-menu --save
+ng generate @angular/material:navigation components/common/nav-bar
+
+
+______________
+
+namespace WebApplicationCandidateAPI.Models
+{
+    public class Candidate
+    {
+        public int CandidateId { get; set; }
+        [Required, StringLength(50)]
+        public string CandidateName { get; set; } = default!;
+        [Required, DataType(DataType.Date)]
+        public System.DateTime BirthDate { get; set; }
+        [Required, StringLength(30)]
+        public string AppliedFor { get; set; } = default!;
+        [Required, Column(TypeName = "money"), DataType(DataType.Currency)]
+        public decimal ExpectedSalary { get; set; }
+        public bool WorkFromHome { get; set; }
+        [Required, StringLength(120)]
+        public string Picture { get; set; } = default!;
+        public virtual ICollection<Qualification>? Qualifications { get; set; } = new List<Qualification>();
+    }
+    public class Qualification
+    {
+        public int QualificationId { get; set; }
+        [Required, StringLength(50)]
+        public string Degree { get; set; } = default!;
+        [Required]
+        public int PassingYear { get; set; }
+        [Required, StringLength(50)]
+        public string Institute { get; set; } = default!;
+        [Required, StringLength(20)]
+        public string Result { get; set; } = default!;
+        [Required, ForeignKey("Candidate")]
+        public int CandidateId { get; set; }
+        public virtual Candidate? Candidate { get; set; } = default!;
+    }
+    public class CandidateDbContext : DbContext
+    {
+        public CandidateDbContext(DbContextOptions<CandidateDbContext> options) : base(options) { }
+
+        public DbSet<Candidate> Candidates { get; set; } = default!;
+        public DbSet<Qualification> Qualifications { get; set; } = default!;
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Candidate>().HasData(new Candidate
+            {
+                CandidateId = 1,
+                CandidateName = "Candidate 1",
+                AppliedFor = "Executive",
+                BirthDate = new DateTime(1999, 4, 1),
+                ExpectedSalary = 10000.00M,
+                Picture = "1.jpg",
+                WorkFromHome = true
+            });
+            modelBuilder.Entity<Qualification>().HasData(new Qualification
+            {
+                QualificationId = 1,
+                CandidateId = 1,
+                Degree = "HSC",
+                Institute = "ABC",
+                PassingYear = 1999,
+                Result = "B"
+            });
+
+        }
+    }
+
+}
+
+_________________________
+
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<CandidateDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("db")));
+
+
+builder.Services.AddCors(p => p.AddPolicy("EnableCors", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+builder.Services.AddControllers()
+     .AddNewtonsoftJson(option => {
+         option.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
+         option.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+     });
+var app = builder.Build();
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.UseCors("EnableCors");
+
+app.MapControllers();
+
+app.Run();
+
+
+______________________________
+ "db": "Data Source=(localdb)\\mssqllocaldb;Database=CandidateInformationDB.mdf;Initial Catalog=CandidateInformationDB;Trusted_Connection=True"
+
+
+________________________________
+
+CandidatesController
+_____________________
+public class CandidatesController : ControllerBase
+    {
+        private readonly CandidateDbContext db;
+        private readonly IWebHostEnvironment env;
+        public CandidatesController(CandidateDbContext db, IWebHostEnvironment env)
+        {
+            this.db = db;
+            this.env = env;
+        }
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Candidate>>> GetCandidates()
+        {
+            return await db.Candidates.ToListAsync();
+        }
+        [HttpGet("VM")]
+        public async Task<ActionResult<IEnumerable<CandidateViewModel>>> GetCandidateViewModels()
+        {
+            var data = await db.Candidates.Include(x => x.Qualifications)
+                .Select(c =>
+               new CandidateViewModel
+               {
+                   CandidateId = c.CandidateId,
+                   CandidateName = c.CandidateName,
+                   AppliedFor = c.AppliedFor,
+                   BirthDate = c.BirthDate,
+                   ExpectedSalary = c.ExpectedSalary,
+                   Picture = c.Picture,
+                   WorkFromHome = c.WorkFromHome,
+                   QualifactionCount = c.Qualifications == null ? 0 : c.Qualifications.Count(),
+                   CanDelete = c.Qualifications == null ? true : !c.Qualifications.Any()
+
+
+               })
+                .ToListAsync();
+            return data;
+        }
+        [HttpGet("{id}/Qualifications")]
+        public async Task<ActionResult<IEnumerable<Qualification>>> GetQualificationsOfCandidate(int id)
+        {
+            return await db.Qualifications.Where(x => x.CandidateId == id).ToListAsync();
+        }
+        [HttpPost]
+        public async Task<ActionResult<Candidate>> PostCandidateInputModel(CandidateInputModel model)
+        {
+            var candidate = new Candidate
+            {
+                CandidateName = model.CandidateName,
+                BirthDate = model.BirthDate,
+                ExpectedSalary = model.ExpectedSalary,
+                AppliedFor = model.AppliedFor,
+                WorkFromHome = model.WorkFromHome,
+                Picture = model.Picture,
+                Qualifications = model.Qualifications
+            };
+            await db.Candidates.AddAsync(candidate);
+            await db.SaveChangesAsync();
+            return candidate;
+        }
+        [HttpPost("Upload/{id}")]
+        public async Task<ActionResult<ImagePathResponse>> UploadPicture(int id, IFormFile picture)
+        {
+            var candidate = await db.Candidates.FirstOrDefaultAsync(x => x.CandidateId == id);
+            if (candidate == null) return NotFound();
+            var ext = Path.GetExtension(picture.FileName);
+            string fileName = Path.GetFileNameWithoutExtension(Path.GetRandomFileName()) + ext;
+            string savePath = Path.Combine(this.env.WebRootPath, "Pictures", fileName);
+            FileStream fs = new FileStream(savePath, FileMode.Create);
+            picture.CopyTo(fs);
+            fs.Close();
+            candidate.Picture = fileName;
+
+            await db.SaveChangesAsync();
+            return new ImagePathResponse { ImgPath = fileName };
+        }
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Candidate>> Delete(int id)
+        {
+            var c = await db.Candidates.FirstOrDefaultAsync(x => x.CandidateId == id);
+            if (c == null) return NotFound();
+            db.Candidates.Remove(c);
+            await db.SaveChangesAsync();
+            return c;
+        }
+    }
+}
+______________________________
+
+ private breakpointObserver = inject(BreakpointObserver);
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
+____________________________________________________
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>ClientApp</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+____________________________________________________
+Imports
+
+BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatNativeDateModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatSelectModule,
+    MatCheckboxModule
+
+____________________________________________________
+
+{ path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'candidates', component: CandidateViewComponent },
+  { path: 'candidate-create', component: CandidateCreateComponent },
+  { path: 'candidate-edit/:id', component: CandidateEditComponent },
+  { path: 'qualifications/:id', component: QualifcationViewComponent },
+
+
+____________________________________________________
+
+HttpClient, DatePipe, CandidateServiceService
+____________________________________________________
+
+picturePath = 'http://localhost:5197/Pictures'
+  candidates: CandidateViewModel[] = [];
+  columns = ['picture', 'candidateName', 'birthDate', 'appliedFor',  'expectedSalary', 'workFromHome', 'qualifactionCount','details', 'actions'];
+  dataSource: MatTableDataSource<CandidateViewModel> = new MatTableDataSource(this.candidates);
+  @ViewChild(MatSort, { static: false }) sort!: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
+  constructor(
+    private candidateSvc: CandidateServiceService,
+    private sanitizer: DomSanitizer
+  ) { }
+  getSafeUrl(p: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.picturePath + "/" + p);
+  }
+  confirmDelete(item: CandidateViewModel) {
+    if (confirm('Are you sure to delete?')) {
+      this.candidateSvc.delete(<number>item.candidateId)
+        .subscribe({
+          next: r => {
+            this.dataSource.data = this.dataSource.data.filter(x => x.candidateId != item.candidateId);
+          },
+          error: err => {
+            console.log(err.message || err);
+          }
+        })
+    }
+  }
+  ngOnInit(): void {
+    this.candidateSvc.getVM()
+      .subscribe({
+
+        next: r => {
+          this.candidates = r;
+          this.dataSource.data = this.candidates;
+          this.dataSource.sort = this.sort;
+          this.dataSource.paginator = this.paginator;
+        },
+        error: err => {
+          console.log(err.message || err);
+        }
+      });
+    }
+
+}
+____________________________________________________
+
+<div class="view-container">
+    <div class="add-bar">
+      <h3>Candidates</h3>
+      <a [routerLink]="['/candidate-create']"  mat-mini-fab color="accent" aria-label="Add">
+            <mat-icon>add</mat-icon>
+          </a>
+    </div>
+    <div>
+      <mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="picture">
+          <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
+          <mat-cell *matCellDef="let element"><img [src]="getSafeUrl(element.picture)" style="width:40px; border-radius:50%" /></mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="candidateName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Candidate Name</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.candidateName}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="birthDate">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Birth Date</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.birthDate|date:'yyyy-MM-dd'}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="appliedFor">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Candidate Name</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.appliedFor}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="expectedSalary">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Ex. Salary</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.expectedSalary|number:'1.2-2'}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="workFromHome">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Work from home?</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.workFromHome ? 'Yes': 'No'}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="qualifactionCount">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Qualification Count</mat-header-cell>
+          <mat-cell *matCellDef="let element">{{element.qualifactionCount}}</mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="details">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Qualifications</mat-header-cell>
+          <mat-cell *matCellDef="let element"><a [routerLink]="['/qualifications', element.candidateId ]">Qualification</a></mat-cell>
+  
+        </ng-container>
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>...</mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <a [routerLink]="['/candidate-edit', element.candidateId]"><mat-icon>edit</mat-icon></a>
+            <button  mat-icon-button (click)="confirmDelete(element)"><mat-icon>delete</mat-icon></button>
+          </mat-cell>
+  
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: columns;"></mat-row>
+      </mat-table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20, 40]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+  
+____________________________________________________
+
+
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+____________________________________________________
+
+

@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.Models.Computer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <h2 class=" text-center">Computers</h2>
+        <p>
+            @Html.ActionLink("Create New", "Create", "Computers", new { @class = "btn btn-primary btn-sm" })
+        </p>
+        <table class="table table-bordered table-striped ">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ComputerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MGFDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Picture)
+                </th>
+                <th></th>
+            </tr>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ComputerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MGFDate)
+                        </td>
+                        <td>
+                            <img src="~/Uploads/@item.Picture"style="width:60px;" class="img-thumbnail" />
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ComputerId }, new { @class = "btn btn-success btn-sm" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = item.ComputerId },
+                           new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                           new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="6">
+                            <h4>Order Item</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Quantity</th>
+                                </thead>
+                                <tbody>
+                                    @foreach (var s in item.OrderItems)
+                                    {
+                                        <tr>
+                                            <td>@s.Quantity</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+
+

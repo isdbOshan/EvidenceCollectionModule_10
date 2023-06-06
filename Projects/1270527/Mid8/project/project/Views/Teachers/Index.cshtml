@@ -1,0 +1,119 @@
+﻿@model IEnumerable<project.Models.Teacher>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-12 p-3">
+        <h3>Teachers</h3>
+        <div class="d-flex justify-content-end mb-1">
+            @Html.ActionLink("Create", "Create", "Teachers", new { }, new { @class = "btn btn-primary btn-sm" })
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th></th>
+                    <th>Teachers Name</th>
+                    <th>Number</th>
+                    <th>Date of birth</th>
+                    <th>Email</th>
+                    <th>Expected Salary</th>
+                    <th>Is Available?</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.TeacherId" style="vertical-align:middle">
+                        <th>
+                            <img class="rounded-circle" src="~/Pictures/@t.Picture" style="width:40px" />
+                        </th>
+                        <td>@t.TeacherName</td>
+                        <td>@t.TeacherPhone</td>
+                        <td>@t.Teacherdob.ToString("yyyy-MM-dd")</td>
+                        <td>@t.TeacherEmail</td>
+
+                        <td>@t.ExpectedAmount.ToString("0.00")</td>
+                        <td>@(t.IsAvailable ? "Yes": "No")</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = t.TeacherId }, new { @class = "btn btn-primary btn-sm" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = t.TeacherId },
+                           new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                           new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="6">
+                            <h4>Qualifications</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Degree</th>
+                                        <th>Passing Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var q in t.TeacherQualifications)
+                                    {
+                                        <tr>
+                                            <td>@q.Degree</td>
+                                            <td>@q.PassingYear</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-around">
+
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    @Ajax.ActionLink("First", "Index", new { page = 1 }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                </li>
+                @for (var i = 1; i <= ViewBag.TotalPage; i++)
+                {
+                    if (ViewBag.Current == i)
+                    {
+                        <li class="page-item active">
+                            @Ajax.ActionLink(i.ToString(), "Index", new { page = i }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            @Ajax.ActionLink(i.ToString(), "Index", new { page = i }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                        </li>
+                    }
+
+                }
+                <li class="page-item">
+                    @Ajax.ActionLink("Last", "Index", new { page = ViewBag.TotalPage }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder", LoadingElementId = "loading" }, new { @class = "page-link" })
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="d-flex">
+        @Html.ActionLink("Back to List", "Index", "MasterDetails", new { }, new { @class = "nav-link btn btn-outline-success" })
+    </div>
+</div>
+ 
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+

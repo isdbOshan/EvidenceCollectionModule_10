@@ -1,0 +1,34 @@
+<form [formGroup]="createForm" class="form-container" (ngSubmit)="save()">
+     <mat-form-field class="f-w">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput formControlName="name">
+         
+          <mat-error *ngIf="f['name'].touched && f['name'].hasError('required')">
+            Name is <strong>required</strong>
+          </mat-error>
+         
+        </mat-form-field>
+        <mat-form-field class="f-w">
+          <mat-label>Price</mat-label>
+          <input type="text" matInput formControlName="price">
+         
+          <mat-error *ngIf="f['price'].touched && f['price'].hasError('required')">
+            Price is <strong>required</strong>
+          </mat-error>
+         
+        </mat-form-field>
+        <mat-form-field class="f-w">
+          <mat-label>Mfg. Date</mat-label>
+          <input matInput formControlName="mfgDate" [matDatepicker]="picker1">
+          <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+          <mat-error *ngIf="f['mfgDate'].touched && f['mfgDate'].hasError('required')">
+               Mfg. Date is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <div class="f-w">
+          <button type="submit" mat-raised-button color="primary" [disabled]="createForm.invalid">Save</button>
+        </div>
+        
+    <div>{{createForm.value|json}}</div>
+</form>

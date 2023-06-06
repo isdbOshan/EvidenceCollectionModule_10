@@ -1,0 +1,69 @@
+﻿@model IEnumerable<P_8_1270857.Models.Qualification>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Candidate.CandidateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Degree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassingYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Institute)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr  id="tr_@item.QualificationId">
+            <td>
+                @Html.DisplayFor(modelItem => item.Candidate.CandidateName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Degree)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PassingYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Institute)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Result)
+            </td>
+            <td>
+
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.QualificationId },
+                           new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                           new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}

@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12">
+        <div class="col-4">
+            <form #productForm="ngForm">
+                <div>
+                    <div><h3>Product Id</h3></div>
+                    <input type="text" #name="ngModel" name="name" [(ngModel)]="product.id" required>
+                    <span *ngIf="name.touched && name.invalid" style="display:block">This Field is Required</span>
+                </div>
+                <br/>
+                <hr/>
+                <div>
+                    <div><h3>Product Name</h3></div>
+                    <input type="text" #name="ngModel" name="name" [(ngModel)]="product.name" required>
+                    <span *ngIf="name.touched && name.invalid" style="display:block">This Field is Required</span>
+                </div>
+                
+                <br/>
+                <hr/>
+                <div>
+                    <div><h3>Product Price</h3></div>
+                    <input type="text" #name="ngModel" name="name" [(ngModel)]="product.price" required>
+                    <span *ngIf="name.touched && name.invalid" style="display:block">This Field is Required</span>
+                </div>
+                
+                <br/>
+                <hr/>
+                <div>
+                    <div><h3>Product Mfg Date</h3></div>
+                    <input type="text" #name="ngModel" name="name" [(ngModel)]="product.mfgDate" required>
+                    <span *ngIf="name.touched && name.invalid" style="display:block">This Field is Required</span>
+                </div>
+                <div>{{product|json}}</div>
+            </form>
+        </div>
+    </div>
+</div>

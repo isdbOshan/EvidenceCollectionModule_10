@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Project_8_1270809.Models.Module>
+
+@{
+    ViewBag.Title = "Index";
+}
+<dv class="row">
+    <div class="col-12">
+        <h3>Module</h3>
+        @*@Html.ActionLink("Create", "Create", "Module", new { }, new { @class = "btn btn-success" })*@
+        <table class="table table-bordered table-striped">
+            <thead class="table-striped">
+                <tr>
+
+                    <th> Traine Name </th>
+                    <th>Module Name </th>
+                    <th>Time Duration </th>
+
+                    <th>Edit/Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.ModuleId">
+                        <td>@t.Trainee.TraineeName</td>
+                        <td>@t.ModuleName</td>
+                        <td>@t.TimeDuration</td>
+
+                        <td>
+                            @*@Html.ActionLink("Edit", "Edit", new { id = t.ModuleId }, new { @class = "btn btn-sm btn-outline-success" })*@
+                            @Ajax.ActionLink("Delete", "Delete", new { id = t.ModuleId }, new AjaxOptions
+                       { HttpMethod = "Post", OnSuccess = "OnSuccess", Confirm = "Are you sure to Delete?" }, new { @class = "btn btn-sm btn-outline-danger" })
+                        </td>
+                    </tr>
+                    
+
+                }
+            </tbody>
+        </table>
+    </div>
+</dv>
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function OnSuccess(r) {
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+
+

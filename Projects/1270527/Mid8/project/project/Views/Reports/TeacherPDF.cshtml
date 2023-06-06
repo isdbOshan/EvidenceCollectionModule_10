@@ -1,0 +1,53 @@
+﻿@model IEnumerable<project.Models.Teacher>
+@{
+    ViewBag.Title = "TeacherPDF";
+}
+
+<div class="row">
+    <div class="col-12 p-3">
+        <h3>Teachers</h3>
+
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th></th>
+                    <th>Teachers Name</th>
+                    <th>Number</th>
+                    <th>Date of birth</th>
+                    <th>Email</th>
+                    <th>Expected Salary</th>
+                    <th>Is Available?</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.TeacherId" style="vertical-align:middle">
+                        <th>
+                            <img class="rounded-circle" src="~/Pictures/@t.Picture" style="width:40px" />
+                        </th>
+                        <td>@t.TeacherName</td>
+                        <td>@t.TeacherPhone</td>
+                        <td>@t.Teacherdob.ToString("yyyy-MM-dd")</td>
+                        <td>@t.TeacherEmail</td>
+
+                        <td>@t.ExpectedAmount.ToString("0.00")</td>
+                        <td>@(t.IsAvailable ? "Yes": "No")</td>
+
+                    </tr>
+
+
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("DownLoad pdf", "TeacherPDF", "Reports", new { }, new { @class = "btn btn-primary btn-sm" })
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("DownLoad xls", "TeacherPDF", "Reports", new { }, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>
+

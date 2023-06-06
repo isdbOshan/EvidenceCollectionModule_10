@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Employee_Management_Project.Models.Position>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-12">
+        <h3 style="text-align:center; color:crimson">List of the Position</h3>
+        <div class="d-flex justify-content-end mb-1">
+            @Html.ActionLink("Create New Position", "Create", "Positions", new { }, new { @class = "btn btn-primary" })
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-danger">
+                <tr style="vertical-align: middle; color:darkmagenta">
+                    <th>Employee Name</th>
+                    <th>Daily Rate</th>
+                    <th>Working Days Per Month</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr id="tr_@p.PositionID" style="vertical-align:middle">
+                        <td>@p.Employee.EmployeeName</td>
+                        <td>@p.DailyRate</td>
+                        <td>@p.WorkingDaysPerMonth</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Positions", new { id = p.PositionID }, new { @class = "btn btn-outline-secondary" })
+                            @Ajax.ActionLink("Delete", "Delete", "Positions", new { id = p.PositionID }, new AjaxOptions { Confirm = "Are youre to delele?", HttpMethod = "Post", OnSuccess = "onSuccess" }, new { @class = "btn btn-outline-danger" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+
+
+

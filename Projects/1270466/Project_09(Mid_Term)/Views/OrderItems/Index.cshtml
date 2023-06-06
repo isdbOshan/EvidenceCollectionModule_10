@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.Models.OrderItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class=" text-center">OrderItems</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create", "OrderItems", new { @class = "btn btn-primary btn-sm" })
+        </p>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Computer.ComputerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Order.OrderId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th></th>
+            </tr>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Computer.ComputerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Order.OrderId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.OrderItemId }, new { @class = "btn btn-success btn-sm" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = item.OrderItemId },
+                                                              new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                                                              new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+

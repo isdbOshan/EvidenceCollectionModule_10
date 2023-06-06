@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.ViewModels.OrderReportModel>
+@{
+    ViewBag.Title = "OrderReport";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Customers</h3>
+
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+
+                    <th>Customer Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var g in Model.GroupBy(x => x.CustomerName).ToList())
+                {
+                    <tr>
+                        <td>
+                            @g.Key
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="6">
+                            <h4>Orders</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Order Date</th>
+                                        <th>Delivery Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var q in g)
+                                    {
+                                        <tr>
+                                            <td>@q.OrderDate</td>
+                                            <td>@q.DelivaryDate</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("PDF", "OrderPDF", "CrystalReport", new { }, new { @class = "btn btn-primary btn-sm" })
+        @Html.ActionLink("Excel", "OrderExcel", "CrystalReport", new { }, new { @class = "btn btn-secondary btn-sm" })
+    </div>
+</div>
+

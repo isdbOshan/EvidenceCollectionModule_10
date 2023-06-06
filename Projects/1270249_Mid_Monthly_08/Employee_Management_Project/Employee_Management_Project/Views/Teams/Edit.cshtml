@@ -1,0 +1,58 @@
+﻿@model Employee_Management_Project.ViewModels.TeamEditModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Create new Team</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(x => x.TeamID)
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.EmployeeID, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.EmployeeID, new SelectList(ViewBag.Employees, "EmployeeID", "EmployeeName"), "Select One", new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.EmployeeID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.Department, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.Department, ViewBag.Departments as IEnumerable<SelectListItem>, new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.Department, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.TeamName, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.TeamName, ViewBag.TeamNames as IEnumerable<SelectListItem>, new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.TeamName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.TeamLeader, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.TeamLeader, ViewBag.TeamLeaders as IEnumerable<SelectListItem>, new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.TeamLeader, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+
+                <div class="col-4 offset-2">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-12">
+        @Html.ActionLink("Back to List", "Index", "Positions", new { }, new { @class = "btn btn-success btn-sm" })
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+}
+

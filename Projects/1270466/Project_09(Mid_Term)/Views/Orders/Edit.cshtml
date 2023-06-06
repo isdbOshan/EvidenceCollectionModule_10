@@ -1,0 +1,56 @@
+﻿@model Project_09_Mid_Term_.Models.Order
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm("Edit", "Orders", new { @class = "btn btn-primary btn-sm" }))
+{
+
+    <div class="form-horizontal">
+        <h4>Add Order</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.OrderId)
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrderDate, htmlAttributes: new { @class = "control-label col-md-2 date" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.OrderDate, new { @class = "form-control date" })
+                @Html.ValidationMessageFor(model => model.OrderDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DelivaryDate, htmlAttributes: new { @class = "control-label col-md-2 date" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DelivaryDate, new { @class = "form-control date" })
+                @Html.ValidationMessageFor(model => model.DelivaryDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CustomerId, "CustomerId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CustomerId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

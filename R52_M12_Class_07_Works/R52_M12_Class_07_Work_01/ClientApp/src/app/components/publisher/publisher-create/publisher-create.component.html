@@ -1,0 +1,39 @@
+<mat-card class="form-card">
+    <mat-card-header>
+      <mat-card-title>Create department</mat-card-title>
+      <mat-card-subtitle>Fill up the form</mat-card-subtitle>
+      <span class="spacer"></span>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="publisherForm" (ngSubmit)="save()">
+        <mat-form-field class="f-w mb-1">
+          <mat-label>Publisher name</mat-label>
+          <input type="text" matInput formControlName="publisherName" />
+  
+         
+         
+          <mat-error *ngIf="f['publisherName'].hasError('required')">
+            Publisher name is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+       
+          <mat-form-field class="f-w mb-1">
+            <mat-label>Address</mat-label>
+            <input type="text" matInput formControlName="address" />
+    
+           
+           
+            <mat-error *ngIf="f['address'].hasError('required')">
+              Address <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+         
+        <div class="f-w mb-1">
+          <button mat-raised-button color="primary" type="submit" [disabled]="publisherForm.invalid">Save</button>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-button [routerLink]="['/publishers']">Back to publisher list</a>
+    </mat-card-actions>
+  </mat-card>

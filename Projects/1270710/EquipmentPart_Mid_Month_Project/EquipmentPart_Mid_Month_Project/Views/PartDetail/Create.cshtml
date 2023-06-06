@@ -1,0 +1,72 @@
+﻿@model EquipmentPart_Mid_Month_Project.ViewModels.PartDetailInputModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Create new PartDetail</h3>
+        @using (Html.BeginForm())
+        {
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.Company, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.Company, ViewBag.CompanyList as IEnumerable<SelectListItem>, new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.Company, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(model => model.Expiredate, new { @class = "control-label col-md-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(model => model.Expiredate, new { @class = "form-control date" })
+                    @Html.ValidationMessageFor(model => model.Expiredate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.Material, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(x => x.Material, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Material, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.PartId, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(x => x.PartId, new SelectList(ViewBag.PartName, "PartId", "PartName"), "Select One", new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.PartId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+
+                <div class="col-4 offset-2">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-12">
+        @Html.ActionLink("Back to List", "Index", "PartDetail", new { }, new { @class = "btn btn-success btn-sm" })
+    </div>
+</div>
+@section styles {
+    <link href="~/Content/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+}
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+        $(".date").datepicker({
+            format: "yyyy-mm-dd"
+        });
+    </script>
+}
+

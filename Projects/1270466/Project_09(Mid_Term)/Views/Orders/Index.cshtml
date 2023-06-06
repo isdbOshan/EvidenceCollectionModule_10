@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-bg-warning">Orders</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", "Orders", new { @class = "btn btn-primary btn-sm" })
+</p>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DelivaryDate)
+        </th>
+        <th></th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DelivaryDate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.OrderId }, new { @class = "btn btn-success btn-sm" })
+                    @Ajax.ActionLink("Delete", "Delete", new { id = item.OrderId },
+                                   new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                                   new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BookShopProject.Models.Publisher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+
+<div class="row">
+    <div class="col-10 ">
+        <h2 class="text-center mt-5">Publishers</h2>
+    </div>
+    <div class="col-10 offset-1">
+        <table class="table table-bordered table-striped">
+            <tr class="text-center">
+                <th>
+                    @Html.DisplayNameFor(model => model.PublisherName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.WebUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PublisherName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WebUrl)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="col-10 offset-1">
+        @Html.ActionLink("Report", "PublisherPDF", "Reports", new { }, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>

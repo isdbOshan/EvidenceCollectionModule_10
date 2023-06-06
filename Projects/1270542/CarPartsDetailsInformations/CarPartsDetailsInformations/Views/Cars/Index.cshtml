@@ -1,0 +1,87 @@
+﻿@model IEnumerable<CarPartsDetailsInformations.Models.Vehicle>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-12">
+        <h3>Car Information</h3>
+        <div class="d-flex justify-content-end mb-1">
+            @Html.ActionLink("Create", "Create", "Cars", new { }, new { @class = "btn btn-primary btn-sm" })
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr> 
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Launch</th>
+                    <th>Stock</th>
+                    <th>Picture</th>
+                    <th></th>
+                   <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr id="tr_@c.VehicleId" style="vertical-align:middle">
+                        <td>@c.VehicleName</td>
+                        <td>@c.Price.ToString("0.00")</td>
+                        <td>@c.MakeYear</td>
+                        <td>@c.IsStock</td>
+                       
+                        <td>
+                            <img class="img-fluid" src="~/Pictures/@c.Picture" style="width:50px" />
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Cars", new { id = c.VehicleId }, new { @class = "btn btn-primary btn-sm" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = c.VehicleId },
+                           new AjaxOptions { Confirm = "Are youre to delele?", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                           new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>Address</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var q in c.Customer)
+                                    {
+                                        <tr id="tr_@c.VehicleId" style="vertical-align:middle">
+                                            <td>@q.CustomerName</td>
+                                            <td>@q.Phone</td>
+                                            <td>@q.Email</td>
+                                            <td>@q.Address</td>
+                                            <td></td>
+
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            $("#tr_" + r).remove();
+        }
+    </script>
+}

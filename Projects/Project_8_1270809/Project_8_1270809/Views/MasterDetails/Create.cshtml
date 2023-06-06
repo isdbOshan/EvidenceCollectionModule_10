@@ -1,0 +1,145 @@
+﻿@model Project_8_1270809.ViewModel.TraineeInputModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Ajax.BeginForm("Create", "MasterDetails", new { }, new AjaxOptions
+{ InsertionMode = InsertionMode.Replace, HttpMethod = "Post", OnSuccess = "OnSuccess" }, new
+{
+    id = "frm"
+}))
+{
+
+  <h3>New Trainee</h3>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(model => model.TraineeName, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.TraineeName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.TraineeName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AdmitionFee, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.AdmitionFee, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.AdmitionFee, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DateOfBirth, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control date" })
+            @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.OnAddmited, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.CheckBoxFor(model => model.OnAddmited)
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Picture, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" id="pic" class="form-control" />
+            @Html.HiddenFor(model => model.Picture)
+            @Html.ValidationMessageFor(model => model.Picture, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="w-75">
+        <div class="d-flex justify-content-end">
+            <button type="button" id="add" class="btn btn-success">Add</button>
+        </div>
+    </div>
+    <div class="row" id="module">
+        <h3>New Module</h3>
+        @Html.Action("AddModuleToForm")
+    </div>
+    <div class="w-75">
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section styles{
+    <link href="~/Content/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+}
+
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+        $.validator.setDefaults({
+            ignore: ""
+        });
+        $(".date").datepicker({
+            format: "yyyy-mm-dd"
+        });
+        $("#pic").change(() => {
+            if (document.getElementById("pic").files.length) {
+                $("#Picture").val(document.getElementById("pic").files[0].name)
+            }
+        });
+        $("#add").click(() => {
+            $.ajax({
+                type: "Post",
+                url: "/MasterDetails/AddModuleToForm",
+                cache: false,
+                data: $("#frm").serialize(),
+                success: r => {
+                    $("#module").html(r)
+                }
+            });
+        })
+        $(document).on("click", "button.del", function () {
+            var i = $(this).data("index");
+            $.ajax({
+                type: "Post",
+                url: "/MasterDetails/AddModuleToForm?index=" +i,
+                cache: false,
+                data: $("#frm").serialize(),
+                success: r => {
+                    $("#module").html(r)
+                }
+            });
+        })
+        function OnSuccess(r) {
+            if (r) {
+                var formData = new FormData();
+                   if (document.getElementById("pic").files.length > 0) {
+                        formData.append("Picture", document.getElementById("pic").files[0]);
+                        $.ajax({
+                            type: "Post",
+                            url: "/MasterDetails/UploadImage/" + r.id,
+                            contentType: false,
+                            processData: false,
+                            data: formData,
+                            success: r => {
+                                alert("Save Data");
+                            }
+                        });     
+                 }
+            }
+        }
+    </script>
+}

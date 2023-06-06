@@ -1,0 +1,87 @@
+﻿@model project.Models.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2>Create new Student List</h2>
+
+
+        @using (Html.BeginForm("Create", "Students", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="form-group row mb-1">
+                @Html.LabelFor(s => s.StudentName, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(s => s.StudentName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.StudentName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(s => s.Studentdob, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(s => s.Studentdob, new { @class = "form-control date" })
+                    @Html.ValidationMessageFor(s => s.Studentdob, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(s => s.StudentEmail, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(s => s.StudentEmail, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.StudentEmail, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(s => s.StudentPhone, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(s => s.StudentPhone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.StudentPhone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(s => s.StudentClass, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.TextBoxFor(s => s.StudentClass, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.StudentClass, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(t => t.Areas, new { @class = "col-form-label col-2" })
+                <div class="col-4">
+                    @Html.DropDownListFor(t => t.AreaId, new SelectList(ViewBag.Area, "AreaId", "Locations"), "Select One", new { @class = "form-select" })
+                    @Html.ValidationMessageFor(t => t.AreaId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="from-group row mb-2">
+                <div class="col-6 offset-2">
+                    <button type="submit" class="btn btn-primary" id="save">Save</button>
+                </div>
+
+            </div>
+        }
+        <div class="col-12">
+            @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-outline-success" })
+        </div>
+    </div>
+</div>
+@section styles
+{
+    <link href="~/Content/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+         
+
+        $(".date").datepicker({
+            format: "yyyy-mm-dd"
+        });
+    </script>
+    }

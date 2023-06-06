@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        .main {
+            min-height: calc(100vh - 145px);
+        }
+    </style>
+    @RenderSection("styles", false)
+</head>
+<body>
+    <nav class="navbar bg-white fixed-top navbar-expand-md shadow-sm border-bottom bg-dark" style="background: linear-gradient(-50deg, #7F8B3C 70%, white 20%); width:100%; height: 70px; font-size: 1.1rem; font-weight: bold; color: beige ">
+        <div class="container">
+            <img src="~/Uploads/12.png" height="40" width="40" />
+            <span class="navbar-brand">Computer World</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Compuers", "Index", "Computers", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Customers", "Index", "Customers", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Orders", "Index", "Orders", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("OrderItems", "Index", "OrderItems", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Reports</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="@Url.Action("Index", "CrystalReport")" class="nav-link">Report 1</a></li>
+                            <li><a href="@Url.Action("CustomerReport", "CrystalReport")" class="nav-link">Report 2</a></li>
+                            <li><a href="@Url.Action("OrderReport", "CrystalReport")" class="nav-link">Report 3</a></li>
+                            <li><a href="@Url.Action("OrderItemReport", "CrystalReport")" class="nav-link">Report 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">@Html.ActionLink("MasterDetails", "Index", "MasterDetails", new { }, new { @class = "nav-link" })</li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li class="nav-item">@Html.ActionLink("Logout", "Logout", "Accounts", new { }, new { @class = "nav-link" })</li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">@Html.ActionLink("Register", "Register", "Accounts", new { }, new { @class = "nav-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Login", "Login", "Accounts", new { }, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid main" style="min-height:calc(100vh - 110px)">
+        @RenderBody()
+    </main>
+    <footer class="container-fluid text-white navbar sticky-bottom" style="background: #7F8B3C;">
+        <div class="container text-center">
+            <p>&copy; Design & Develope by Sumaiya_Jui</p>
+            <p>@DateTime.Today.ToString("MMM dd, yyyy")</p>
+        </div>
+       
+    </footer>
+    @RenderSection("scripts", false)
+</body>
+</html>

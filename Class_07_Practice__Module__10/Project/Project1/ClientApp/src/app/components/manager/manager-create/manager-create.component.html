@@ -1,0 +1,49 @@
+<mat-card class="Form-card">
+    <mat-card-header>
+      <mat-card-title>Create Manager</mat-card-title>
+      <mat-card-subtitle>Fill up the form</mat-card-subtitle>
+      <span class="spacer"></span>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="ManagerForm" (ngSubmit)="save()">
+            <mat-form-field class="form mb-1">
+              <mat-label>Manager Name</mat-label>
+              <input type="text" matInput formControlName="managerName" >
+              <mat-error *ngIf="f['managerName'].hasError('required')">
+                Manager Name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form mb-1">
+                <mat-label>Picture</mat-label>
+                <input matInput formControlName="picture" >
+                <mat-error *ngIf="f['picture'].hasError('required')">
+                  Picture is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+            <mat-form-field class="form mb-1">
+                <mat-label>Product</mat-label>
+                <mat-select  formControlName="productId">
+                    <mat-option *ngFor="let product of products" [value]="product.productId">
+                      {{product.productName}}
+                    </mat-option>
+                  </mat-select>
+                <mat-error *ngIf="f['productId'].hasError('required')">
+                  Section is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+  
+
+            <div class="form">
+                <button mat-raised-button color="primary" type="submit" [disabled]="ManagerForm.invalid">Save</button>
+            </div>
+
+          </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [routerLink]="['/managers']">Back to List</a>
+    </mat-card-actions>
+  </mat-card>
+
+

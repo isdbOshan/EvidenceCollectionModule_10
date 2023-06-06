@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Employee_Management_Project.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 style="text-align:center; color:crimson">List of the Employees</h2>
+        <div class="d-flex justify-content-end mb-1">
+            @Html.ActionLink("Create", "Create", "Employees", new { }, new { @class = "btn btn-warning" })
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Branch Name</th>
+                    <th>Joining Date</th>
+                    <th>Activity Status</th>
+                    <th>Salary</th>
+                    <th>Phone</th>
+                    <th>Picture</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in Model)
+                {
+                    <tr id="tr_@e.EmployeeID" style="vertical-align:middle">
+                        <td>@e.EmployeeName</td>
+                        <td>@e.BranchName</td>
+                        <td>@e.JoiningDate.ToString("yyyy-MM-dd")</td>
+                        <td>@e.ActivityStatus</td>
+                        <td>@e.Salary</td>
+                        <td>@e.Phone</td>
+                        <td>
+                            <img class="img-thumbnail" src="/Pictures/@e.Picture" style="width:40px" />
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Employees", new { id = e.EmployeeID }, new { @class = "btn btn-outline-success" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = e.EmployeeID },
+                           new AjaxOptions { Confirm = "Are youre to delele?\nRelated data will also be deleted", HttpMethod = "Post", OnSuccess = "onSuccess" },
+                           new { @class = "btn btn-outline-danger " })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="8">
+                            <h2 style="text-align:center; color:crimson">Experiences of the Employees</h2>
+                            <table class=" table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Company Name</th>
+                                        <th>Designation</th>
+                                        <th>Experience Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var ex in e.Experiences)
+                                    {
+                                        <tr>
+                                            <td>@ex.CompanyName</td>
+                                            <td>@ex.Designation</td>
+                                            <td>@ex.ExperienceYear</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+
+

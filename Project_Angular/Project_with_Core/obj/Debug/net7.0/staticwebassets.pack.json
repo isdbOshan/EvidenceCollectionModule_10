@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Sohan\\ESAD\\MODULE_10\\Class\\Class_10\\Project_Angular\\Project_Angular\\Project_with_Core\\wwwroot\\Images\\4zn4jboe.jpg",
+      "PackagePath": "staticwebassets\\Images\\4zn4jboe.jpg"
+    },
+    {
+      "Id": "D:\\Sohan\\ESAD\\MODULE_10\\Class\\Class_10\\Project_Angular\\Project_Angular\\Project_with_Core\\wwwroot\\Images\\q1qi4cbi.jpg",
+      "PackagePath": "staticwebassets\\Images\\q1qi4cbi.jpg"
+    },
+    {
+      "Id": "D:\\Sohan\\ESAD\\MODULE_10\\Class\\Class_10\\Project_Angular\\Project_Angular\\Project_with_Core\\wwwroot\\Images\\sd2lxmki.jpg",
+      "PackagePath": "staticwebassets\\Images\\sd2lxmki.jpg"
+    },
+    {
+      "Id": "D:\\Sohan\\ESAD\\MODULE_10\\Class\\Class_10\\Project_Angular\\Project_Angular\\Project_with_Core\\wwwroot\\Images\\sj33od1p.jpg",
+      "PackagePath": "staticwebassets\\Images\\sj33od1p.jpg"
+    },
+    {
+      "Id": "D:\\Sohan\\ESAD\\MODULE_10\\Class\\Class_10\\Project_Angular\\Project_Angular\\Project_with_Core\\wwwroot\\Images\\spz1tllk.png",
+      "PackagePath": "staticwebassets\\Images\\spz1tllk.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Project_with_Core.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Project_with_Core.props",
+      "PackagePath": "build\\Project_with_Core.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Project_with_Core.props",
+      "PackagePath": "buildMultiTargeting\\Project_with_Core.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Project_with_Core.props",
+      "PackagePath": "buildTransitive\\Project_with_Core.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

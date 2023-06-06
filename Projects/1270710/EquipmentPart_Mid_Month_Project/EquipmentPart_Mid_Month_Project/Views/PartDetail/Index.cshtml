@@ -1,0 +1,52 @@
+﻿@model IEnumerable<EquipmentPart_Mid_Month_Project.Models.PartDetail>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-12">
+        <h3 style="text-align:center; color:crimson">List of the PartDetail</h3>
+        <div class="d-flex justify-content-end mb-1">
+            @Html.ActionLink("Create New PartDetail", "Create", "PartDetail", new { }, new { @class = "btn btn-primary" })
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-danger">
+                <tr style="vertical-align: middle; color:darkmagenta">
+                    <th>Description</th>
+                    <th>Expiredate</th>
+                    <th>Material</th>
+                    <th>Company</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr id="tr_@p.PartDetailId" style="vertical-align:middle">
+                        <td>@p.Part.PartName</td>
+                        <td>@p.Description</td>
+                        <td>@p.Material</td>
+                        <td>@p.Company</td>
+
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "PartDetail", new { id = p.PartDetailId }, new { @class = "btn btn-outline-secondary" })
+                            @Ajax.ActionLink("Delete", "Delete", "PartDetail", new { id = p.PartDetailId }, new AjaxOptions { Confirm = "Are youre to delele?", HttpMethod = "Post", OnSuccess = "onSuccess" }, new { @class = "btn btn-outline-danger" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts {
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+
+
+

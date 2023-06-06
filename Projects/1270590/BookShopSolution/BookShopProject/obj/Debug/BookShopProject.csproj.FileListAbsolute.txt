@@ -1,0 +1,406 @@
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll.config
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.pdb
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe.config
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.rsp
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe.config
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.rsp
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Buffers.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Memory.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe.config
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.rsp
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.xml
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.AssemblyReference.cache
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CoreCompileInputs.cache
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CopyComplete
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.dll
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.pdb
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.Migrations.InitialCreate.resources
+C:\Users\Rahim\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.GenerateResource.cache
+H:\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll.config
+H:\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.pdb
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe.config
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.rsp
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe.config
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.rsp
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Managed.Core.targets
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Buffers.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Collections.Immutable.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Memory.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Numerics.Vectors.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Reflection.Metadata.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe.config
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.rsp
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe
+H:\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe.config
+H:\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Web.Infrastructure.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.dll
+H:\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.xml
+H:\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.xml
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.AssemblyReference.cache
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.Migrations.InitialCreate.resources
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.GenerateResource.cache
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CoreCompileInputs.cache
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CopyComplete
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.dll
+H:\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.pdb
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll.config
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.pdb
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe.config
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.rsp
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe.config
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.rsp
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Buffers.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Memory.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe.config
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.rsp
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.AssemblyReference.cache
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CoreCompileInputs.cache
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CopyComplete
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.pdb
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Owin.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.xml
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.Shared.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\bin\stdole.dll
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.Migrations.InitialCreate.resources
+C:\Users\Asdf1234\Desktop\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.GenerateResource.cache
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll.config
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\BookShopProject.pdb
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.exe.config
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csc.rsp
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.exe.config
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\csi.rsp
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Buffers.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Collections.Immutable.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Memory.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Numerics.Vectors.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe.config
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\vbc.rsp
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe.config
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportSource.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.Shared.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Web.Infrastructure.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Owin.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\stdole.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Razor.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Helpers.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\bin\System.Web.Mvc.xml
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.AssemblyReference.cache
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CoreCompileInputs.cache
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CopyComplete
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.dll
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.pdb
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.Migrations.InitialCreate.resources
+D:\Abdur Rahim Tipu\Modules\M-7\Project-07\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.GenerateResource.cache
+G:\1270590\BookShopSolution\BookShopProject\bin\BookShopProject.dll.config
+G:\1270590\BookShopSolution\BookShopProject\bin\BookShopProject.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\BookShopProject.pdb
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csc.exe
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csc.exe.config
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csc.rsp
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csi.exe
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csi.exe.config
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\csi.rsp
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.Managed.Core.targets
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Buffers.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Collections.Immutable.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Memory.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Numerics.Vectors.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Reflection.Metadata.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\vbc.exe.config
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\vbc.rsp
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe
+G:\1270590\BookShopSolution\BookShopProject\bin\roslyn\VBCSCompiler.exe.config
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.CrystalReports.Engine.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportSource.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.Shared.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\EntityFramework.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Web.Infrastructure.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\Owin.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Helpers.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Mvc.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Razor.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\stdole.dll
+G:\1270590\BookShopSolution\BookShopProject\bin\EntityFramework.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\EntityFramework.SqlServer.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Core.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Hosting.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.Cookies.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Microsoft.Owin.Security.OAuth.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\Newtonsoft.Json.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Razor.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Deployment.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Webpages.Razor.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Helpers.xml
+G:\1270590\BookShopSolution\BookShopProject\bin\System.Web.Mvc.xml
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.AssemblyReference.cache
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.Migrations.InitialCreate.resources
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.GenerateResource.cache
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CoreCompileInputs.cache
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.csproj.CopyComplete
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.dll
+G:\1270590\BookShopSolution\BookShopProject\obj\Debug\BookShopProject.pdb

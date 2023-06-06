@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "py9ygPbbdrFqHFTbrCClJVVlJGH/Wt5CGYckoAv4FlU=",
+  "Source": "WebApplication1",
+  "BasePath": "_content/WebApplication1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication1\\wwwroot",
+      "Source": "WebApplication1",
+      "ContentRoot": "D:\\Sohan\\ESAD\\Module_10_MidTerm_Evidence\\MidFinalEvidence\\Project1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Sohan\\ESAD\\Module_10_MidTerm_Evidence\\MidFinalEvidence\\Project1\\WebApplication1\\wwwroot\\Pictures\\yicliidw.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sohan\\ESAD\\Module_10_MidTerm_Evidence\\MidFinalEvidence\\Project1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Pictures/yicliidw.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\yicliidw.jpg"
+    }
+  ]
+}

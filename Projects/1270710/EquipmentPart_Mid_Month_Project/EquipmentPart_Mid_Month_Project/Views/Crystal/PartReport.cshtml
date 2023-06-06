@@ -1,0 +1,64 @@
+﻿@model IEnumerable<EquipmentPart_Mid_Month_Project.ViewModels.PartReportModel>
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Equipments</h3>
+
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+
+                    <th>Equipment Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var g in Model.GroupBy(x => x.EquipmentName).ToList())
+                {
+                    <tr>
+                        <td>
+                            @g.Key
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="6">
+                            <h4>Parts</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Part Name</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var q in g)
+                                    {
+                                        <tr>
+                                            <td>@q.PartId</td>
+                                            <td>@q.PartName</td>
+                                            <td>@q.Quantity</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("To PDF", "PartPDF", "Reports", new { }, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>
+@section scripts {
+
+}
+
+

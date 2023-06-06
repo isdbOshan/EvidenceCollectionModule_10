@@ -1,0 +1,6 @@
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.csproj.AssemblyReference.cache
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.AssemblyInfoInputs.cache
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.AssemblyInfo.cs
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.csproj.CoreCompileInputs.cache
+D:\Sohan\ESAD\MODULE_10\Class\EvidencePractice\MVCCoreOnes\WebApplicationCoreTwos\WebApplicationCoreTwo\obj\Debug\net7.0\WebApplicationCoreTwo.MvcApplicationPartsAssemblyInfo.cache

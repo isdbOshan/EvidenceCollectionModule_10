@@ -1,0 +1,22 @@
+﻿@model Project_8_1270809.ViewModel.TraineeEditModel
+
+@for (var i = 0; i < Model.Modules.Count; i++)
+{
+    <div class="col-4">
+        <label>Module Name</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Modules[i].ModuleName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Modules[i].ModuleName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-4">
+        <label>Time Duration</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Modules[i].TimeDuration, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Modules[i].TimeDuration, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-4">
+        <button type="button" class="btn btn-success del" data-index="@i">Remove</button>
+    </div>
+}

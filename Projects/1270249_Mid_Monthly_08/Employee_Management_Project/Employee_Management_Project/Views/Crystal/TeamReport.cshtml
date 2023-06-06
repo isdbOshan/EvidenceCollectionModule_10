@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Employee_Management_Project.ViewModels.TeamReportViewModel>
+
+@{
+    ViewBag.Title = "TeamReport";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 style="text-align:center; color:crimson">Employee Teams</h2>
+
+        <table class="table table-bordered">
+            <thead class="table-danger">
+                <tr>
+                    <th class="table-dark">Employee Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var g in Model.GroupBy(x => x.EmployeeName).ToList())
+                {
+                    <tr style="vertical-align:middle">
+                        <td>@g.Key</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="8">
+                            <h3 style="text-align:center; color:crimson">Team Details</h3>
+                            <table class=" table table-bordered">
+                                <thead class="table-danger">
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>TeamName</th>
+                                        <th>TeamLeader</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var t in g)
+                                    {
+                                        <tr>
+                                            <td>@t.Department</td>
+                                            <td>@t.TeamName</td>
+                                            <td>@t.TeamLeader</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-lg-start mb-1">
+        @Html.ActionLink("Employee Team Pdf Download", "TeamsPDF", "Crystal", new { }, new { @class = "btn btn-warning" })&nbsp; &nbsp; &nbsp; &nbsp;
+        @Html.ActionLink("Employee Team Excel Download", "TeamsExcel", "Crystal", new { }, new { @class = "btn btn-warning" })
+    </div>
+    <br />
+    
+</div>
+
+
+
+
+

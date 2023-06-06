@@ -1,0 +1,55 @@
+﻿@model Project_8_1270809.Models.ExamResult
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<div class="row">
+    <div class="col-12">
+        @using (Html.BeginForm("Create", "ExamResults", FormMethod.Post))
+        {
+            <h2>Create</h2>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.Result, new { @class = "col-form-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(x => x.Result, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Result, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.PublishDate, new { @class = "col-form-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(x => x.PublishDate, new { @class = "form-control date" })
+                    @Html.ValidationMessageFor(x => x.PublishDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group row mb-1">
+                @Html.LabelFor(x => x.ExamId, new { @class = "col-form-label" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(x => x.ExamId, new SelectList(ViewBag.Exam, "ExamId", "ExamName"), "Select One", new { @class = "form-select" })
+                    @Html.ValidationMessageFor(x => x.ExamId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div>
+                <button type="submit" class=" btn btn-success">Create</button>
+            </div>
+        }
+    </div>
+    @Html.ActionLink("Back to list", "Index");
+</div>
+@section styles{
+    <link href="~/Content/bootstrap-datepicker.standalone.css" rel="stylesheet" />
+}
+@section scripts{
+
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script>
+        $(".date").datepicker({
+            format: "yyyy-mm-dd"
+        });
+    </script>
+}

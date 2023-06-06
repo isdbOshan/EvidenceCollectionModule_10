@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Project_8_1270809.ViewModel.ModuleView>
+@{
+    ViewBag.Title = "ModuleReports";
+}
+<dv class="row">
+    <div class="col-12">
+        <h3>Module</h3>
+        @*@Html.ActionLink("Create", "Create", "Module", new { }, new { @class = "btn btn-success" })*@
+        <table class="table table-bordered table-striped">
+            <thead class="table-striped">
+                <tr>
+
+                    <th> ModuleName</th>
+                    <th>TimeDuration </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr>
+                        <td>@t.ModuleName</td>
+                        <td>@t.TimeDuration</td>
+                    </tr>
+
+
+                }
+            </tbody>
+        </table>
+    </div>
+</dv>
+<h2>ModuleReports</h2>
+
+<div>
+    @Html.ActionLink("To PDF", "ModulePDF", "Reports", new { }, new { @class = "btn btn-primary" })
+</div>
+&nbsp;
+<div>
+
+    @Html.ActionLink("To Xls", "Moduleexcel", "Reports", new { }, new { @class = "btn btn-primary" })
+
+</div>

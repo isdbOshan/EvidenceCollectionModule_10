@@ -1,0 +1,66 @@
+﻿@model IEnumerable< BookShopProject.Models.Order>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2 class="text-center mt-1 mb-1">Books</h2>
+<div class=" row">
+    <div class=" col-12" id="placeholder1">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Book.Author.Publisher.PublisherName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Book.Author.AuthorName)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Book.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Book.PublishDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Book.Author.Publisher.PublisherName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Book.Author.AuthorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Book.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Book.PublishDate)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                        <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="col-10 offset-1">
+        @Html.ActionLink("Report", "AllTablePDF", "Reports", new { }, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>
+

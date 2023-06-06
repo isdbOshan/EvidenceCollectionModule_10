@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Project_8_1270809.ViewModel.TraineeViewModel>
+@{
+    ViewBag.Title = "TraineeReport";
+}
+
+<h2>TraineeReport</h2>
+
+
+<dv class="row">
+    <div class="col-12">
+        <h3>MaterDetails</h3>
+        @*@Html.ActionLink("Create", "Create", "MasterDetails", new { }, new { @class = "btn btn-success" })*@
+        <table class="table table-bordered table-striped">
+            <thead class="table-striped">
+                <tr>
+                    <th>Traine Name </th>
+                    <th>Date Of Birth </th>
+                    <th>Admition Fee </th>
+                    <th>On Addmited </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.TraineeId">
+                        <td>@t.TraineeName</td>
+                        <td>@t.DateOfBirth</td>
+                        <td>@t.AdmitionFee</td>
+                        <td>@t.OnAddmited</td>
+
+                    </tr>
+
+
+                }
+            </tbody>
+        </table>
+    </div>
+</dv>
+
+
+@Html.ActionLink("To PDF", "TraineePDF", "Reports", new { }, new { @class = "btn btn-primary" })
+&nbsp;
+@Html.ActionLink("To xls", "Traineexls", "Reports", new { }, new { @class = "btn btn-primary" })

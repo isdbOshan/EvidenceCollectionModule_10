@@ -1,0 +1,44 @@
+<mat-card >
+    <mat-card-header>
+      <mat-card-title>Manager</mat-card-title>
+      <mat-card-subtitle>List of Manager</mat-card-subtitle>
+      <span class="spacer"></span>
+        <div>
+            <a [routerLink]="['/manager-create']"><mat-icon>add_box</mat-icon></a>
+          </div>
+      </mat-card-header>
+      <mat-card-content>
+          <mat-table [dataSource]="dataSource" matSort>
+              <ng-container matColumnDef="managerName">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header=""> managerName </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.managerName}} </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="sectionId">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header=""> Section </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.sectionName}} </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="productId">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header=""> Product </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.productName}} </mat-cell>
+              </ng-container>
+              <ng-container matColumnDef="sectionId">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header=""> Picture </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.picture}} </mat-cell>
+                  <img mat-card-image src="" alt="Photo of a Shiba Inu">
+              </ng-container>
+              <ng-container matColumnDef="actions">
+                  <mat-header-cell *matHeaderCellDef>Manage</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <a mat-icon-button [routerLink]="['/product-edit', element.productId]"><mat-icon>edit</mat-icon></a>
+                    <button mat-icon-button color="warn" (click)="confirmDelete(element)"  ><mat-icon>delete</mat-icon></button>
+                  </mat-cell>
+                </ng-container>
+              <mat-header-row *matHeaderRowDef="columnList"></mat-header-row>
+              <mat-row *matRowDef="let row; columns: columnList;"></mat-row>
+          </mat-table>
+      </mat-card-content>
+      <mat-card-actions>
+          <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]" [pageSize]="10" showFirstLastButtons></mat-paginator>
+      </mat-card-actions>
+    </mat-card>
+

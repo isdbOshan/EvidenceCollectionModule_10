@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.Models.Computer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h3>Computers</h3>
+
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th></th>
+                    <th>Computer Name</th>
+                    <th>Price</th>
+                    <th>MFG Date</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr id="tr_@c.ComputerId" style="vertical-align:middle">
+                        <td>
+                            <img class="rounded-circle" src="~/Uploads/@c.Picture" style="width:40px" />
+                        </td>
+                        <td>@c.ComputerName</td>
+                        <td>@c.Price</td>
+                        <td>@c.MGFDate.ToString("yyyy-MM-dd")</td>
+
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("To PDF", "ComputerPDF", "CrystalReport", new { }, new { @class = "btn btn-primary btn-sm" })
+        @Html.ActionLink("To Excel", "ComputerExcel", "CrystalReport", new { }, new { @class = "btn btn-secondary btn-sm" })
+    </div>
+</div>
+
+

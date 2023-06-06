@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.main
+{
+    display: block;
+    margin: 0 30px;
+}
+.medium-card{
+    width: calc(100% - 50px);
+    margin: 15px 25px;
+}
+
+.right-aligned{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.spacer{
+    flex:1 1 auto;
+}
+
+.for-card{
+    width: 65%;
+    margin: 15px auto;
+}
+
+@media only screen and (max-width:600px) {
+    
+}

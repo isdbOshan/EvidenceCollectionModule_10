@@ -1,0 +1,41 @@
+<mat-card class="Form-card">
+    <mat-card-header>
+      <mat-card-title>Update Products</mat-card-title>
+      <mat-card-subtitle>Fill up the form</mat-card-subtitle>
+      <span class="spacer"></span>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="productForm" (ngSubmit)="save()">
+            <mat-form-field class="form mb-1">
+              <mat-label>Product Name</mat-label>
+              <input type="text" matInput formControlName="productName" >
+              <mat-error *ngIf="f['productName'].hasError('required')">
+                Product Name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form mb-1">
+                <mat-label>Section</mat-label>
+                <mat-select  formControlName="sectionId">
+                    <mat-option *ngFor="let section of sections" [value]="section.sectionId">
+                      {{section.sectionName}}
+                    </mat-option>
+                  </mat-select>
+                <mat-error *ngIf="f['sectionId'].hasError('required')">
+                  Section is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+  
+
+            <div class="form">
+                <button mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">Update</button>
+            </div>
+
+          </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [routerLink]="['/products']">Back to List</a>
+    </mat-card-actions>
+  </mat-card>
+
+

@@ -1,0 +1,82 @@
+﻿@model IEnumerable<project.Models.Area>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+         
+        <div class="d-flex justify-content-center mb-4">
+            <h3>Tutore Midea</h3>
+        </div>
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+
+                    <th>Area</th>
+                    <th>Teachers</th>
+                    <th>Students</th>
+                     
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var a in Model)
+                {
+                    <tr id="tr_@a.AreaId" style="vertical-align:middle">
+
+                        <td>@a.Locations</td>
+                        <td>@Html.ActionLink("Details", "Index", "Teachers", new { }, new { @class = "nav-link btn btn-info btn-sm" })</td>
+                        <td>@Html.ActionLink("Details", "Index", "Students", new { }, new { @class = "nav-link btn btn-info btn-sm" })</td>
+                         
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-around">
+
+            <ul class="pagination pagination-sm">
+                <li class="page-item">
+                    @Ajax.ActionLink("First", "Index", new { page = 1 }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                </li>
+                @for (var i = 1; i <= ViewBag.TotalPage; i++)
+                {
+                    if (ViewBag.Current == i)
+                    {
+                        <li class="page-item active">
+                            @Ajax.ActionLink(i.ToString(), "Index", new { page = i }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            @Ajax.ActionLink(i.ToString(), "Index", new { page = i }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder1", LoadingElementId = "loading" }, new { @class = "page-link" })
+                        </li>
+                    }
+
+                }
+                <li class="page-item">
+                    @Ajax.ActionLink("Last", "Index", new { page = ViewBag.TotalPage }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "placeholder", LoadingElementId = "loading" }, new { @class = "page-link" })
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="col-2">
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function onSuccess(r) {
+            console.log(r);
+            $("#tr_" + r).remove();
+        }
+    </script>
+}
+

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Employee_Management_Project.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 style="text-align:center; color:crimson">List of the Employees</h2>
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Branch Name</th>
+                    <th>Joining Date</th>
+                    <th>Activity Status</th>
+                    <th>Salary</th>
+                    <th>Phone</th>
+                    <th>Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in Model)
+                {
+                    <tr id="tr_@e.EmployeeID" style="vertical-align:middle">
+                        <td>@e.EmployeeName</td>
+                        <td>@e.BranchName</td>
+                        <td>@e.JoiningDate.ToString("yyyy-MM-dd")</td>
+                        <td>@e.ActivityStatus</td>
+                        <td>@e.Salary</td>
+                        <td>@e.Phone</td>
+                        <td>
+                            <img class="img-thumbnail" src="/Pictures/@e.Picture" style="width:40px" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-lg-start mb-1">
+        @Html.ActionLink("Employee List Pdf Download", "EmployeePDF", "Crystal", new { }, new { @class = "btn btn-warning" })&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Employee List Excel Download", "EmployeeExcel", "Crystal", new { }, new { @class = "btn btn-warning" })
+    </div>
+</div>

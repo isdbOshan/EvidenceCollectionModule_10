@@ -1,0 +1,242 @@
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll.config
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.pdb
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe.config
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.rsp
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe.config
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.rsp
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Managed.Core.targets
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Buffers.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Collections.Immutable.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Memory.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Numerics.Vectors.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Reflection.Metadata.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe.config
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.rsp
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe.config
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Web.Infrastructure.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Owin.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.xml
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.AssemblyReference.cache
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CoreCompileInputs.cache
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CopyComplete
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.dll
+F:\1270249_Pavel Islam BackUp\Module 08 ASP.NET Core\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.pdb
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll.config
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.pdb
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe.config
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.rsp
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe.config
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.rsp
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Buffers.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Memory.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe.config
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.rsp
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.Shared.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Owin.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\stdole.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.xml
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.AssemblyReference.cache
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CoreCompileInputs.cache
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CopyComplete
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.dll
+C:\Users\Pavel Islam PC\Desktop\ME_07\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.pdb
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll.config
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Employee_Management_Project.pdb
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.exe.config
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csc.rsp
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.exe.config
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\csi.rsp
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Buffers.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Memory.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.exe.config
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\vbc.rsp
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportSource.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.Shared.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Owin.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\stdole.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\EntityFramework.SqlServer.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Razor.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Helpers.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\bin\System.Web.Mvc.xml
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.AssemblyReference.cache
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CoreCompileInputs.cache
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.csproj.CopyComplete
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.dll
+C:\Users\LAB104-11\Desktop\1270249_Mid_Monthly_08\Employee_Management_Project\Employee_Management_Project\obj\Debug\Employee_Management_Project.pdb

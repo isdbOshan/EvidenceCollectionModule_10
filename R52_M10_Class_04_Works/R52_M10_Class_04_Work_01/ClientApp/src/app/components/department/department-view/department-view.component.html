@@ -1,0 +1,30 @@
+<mat-card class="medium-card">
+    <mat-card-header>
+        <mat-card-title>Departments</mat-card-title>
+        <mat-card-subtitle>Departments List</mat-card-subtitle>
+        <span class="spacer"></span>
+        <a mat-fab [routerLink]="['/department-create']">
+            <mat-icon>add</mat-icon>
+        </a>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="departmentForm" (ngSubmit)="save()">
+            <mat-form-field class="fw mb-1">
+                <mat-label>Department name</mat-label>
+                <input type="text" matInput formControlName="departmentName" />
+                <mat-error *ngIf="f['departmentName'].hasError('maxLength')">
+                    Maximum <strong>50</strong> character allowed
+                </mat-error>
+                <mat-error *ngIf="f['departmentName'].hasError('required')">
+                    Department name is  <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <div class="fw mb-1">
+                <button mat-raised-button color="primary" type="submi" [disabled]="departmentForm.invalid">Save</button>
+            </div>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [routerLink]="['/departments']">Back To Department list</a>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Project_8_1270809.Models.ExamResult>
+@{
+    ViewBag.Title = "Index";
+}
+<dv class="row">
+    <div class="col-12">
+        <h3>ExamResults</h3>
+        @Html.ActionLink("Create", "Create", "ExamResults", new { }, new { @class = "btn btn-success" })
+        <table class="table table-bordered table-striped">
+            <thead class="table-striped">
+                <tr>
+                    <th>Exam Name </th>
+                    <th>Result </th>
+                    <th>PublishDate </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model)
+                {
+                    <tr id="tr_@t.ResutlId">
+                        <td>@t.Exam.ExamName</td>
+                        <td>@t.Result</td>
+                        <td>@t.PublishDate</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = t.ResutlId }, new { @clas = "btn btn-success" })
+                            @Ajax.ActionLink("Delete", "Delete", new { id = t.ResutlId }, new AjaxOptions
+                  { HttpMethod = "Post", OnSuccess = "OnSuccess", Confirm = "Are you sure to Delete?" }, new { @clas = "btn btn-success" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</dv>
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.3.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function OnSuccess(r) {
+            $("#tr_" + r).remove();
+        }
+    </script>
+    }

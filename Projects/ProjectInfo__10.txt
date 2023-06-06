@@ -1,0 +1,282 @@
+11.in the Applicant Model, first we will add the required libraries in the Using Section.
+
+12.Then add the property Named ID.  this will be Applicant id and it will became the primary key of our table.
+
+13.Since we are going to have detail table with relation. we must have a primary key column in the Master Table. I mean in the Applicant Table.
+
+14.Then we will have the General properties of the resume  like Name, Gender, Age. 
+
+15. Notice that Age is having a range Validator. We are Accepting only Applicants of aged between 25 to 55 years only. this is working age. so That Make sense.
+
+16. Then we also added two more properties named qualification and Total Experience.  Again Total Experience has a Range Validator.
+
+17. Notice that I have specified the length for all the properties of type string.
+
+18. Otherwise EF Core will  create a column of type nvarchar of MAX. which is not a good idea. so it is always better to  specify the length for the properties with
+data type as string.
+
+19. Now let's add the Model class to store the experience details. We will name this class as Experience. This model will became the detail table for the 
+applicant table.
+
+20. Let's add a  property named ExperienceID  ,This is the primary
+key column for our experiences table. 
+
+21. And then add the componentmodel and componentmodel.dataannotation. schema namespaces to the using section.
+
+
+I request you to watch the complete Video at YouTube which explains better.
+
+but I have copied all the required class files source and controller source.
+
+Master Detail CRUD ASP.NET CORE 5 MVC
+
+
+You can copy and paste the source on when watching the video.
+
+The ApplicantModel.cs source is below.
+
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ResumeManager.Models
+{
+    public class Applicant
+    {
+        [Key]
+        public int Id { get; set; }
+
+
+        [Required]
+        [StringLength(150)]
+        public string Name { get; set; } = "";
+
+        [Required]
+        [StringLength(10)]
+        public string Gender { get; set; } = "";
+
+        [Required]
+        [Range(25, 55, ErrorMessage = "Currently,We Have no Positions Vacant for Your Age")]
+        [DisplayName("Age in Years")]
+        public int Age { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Qualification { get; set; } = "";
+
+        [Required]
+        [Range(1, 25, ErrorMessage = "Currently,We Have no Positions Vacant for Your Experience")]
+        [DisplayName("Total Experience in Years")]
+        public int TotalExperience { get; set; }
+
+        public virtual List<Experience> Experiences { get; set; } = new List<Experience>();//detail very important
+        
+        public string PhotoUrl { get; set; }
+
+        [Required(ErrorMessage = "Please choose the Profile Photo")]
+        [Display(Name = "Profile Photo")]
+        [NotMapped]
+        public IFormFile ProfilePhoto { get; set; }
+    }
+}
+
+
+22. The Experience Model source is below.
+
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace ResumeManager.Models
+{
+    public class Experience
+    {
+        public Experience()
+        {
+        }
+
+        [Key]
+        public int ExperienceId { get; set; }
+
+        [ForeignKey("Applicant")]//very important
+        public int ApplicantId { get; set; }
+        public virtual Applicant Applicant { get; private set; } //very important 
+
+        public string CompanyName { get; set; }
+        public string Designation { get; set; }
+        [Required]
+        public int YearsWorked { get; set; }
+
+    }
+}
+
+
+23. Resume Dbcontext source is below.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using ResumeManager.Models;
+
+namespace ResumeManager.Data
+{
+    public class ResumeDbContext:DbContext
+    {
+        public ResumeDbContext(DbContextOptions<ResumeDbContext> options):base(options)
+        {
+        }
+        public virtual DbSet<Applicant> Applicants { get; set; }
+        public virtual DbSet<Experience> Experiences { get; set; }
+    }
+}
+
+
+24. ResumeController Source is Below.
+
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using ResumeManager.Data;
+using ResumeManager.Models;
+
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+
+namespace ResumeManager.Controllers
+{
+    public class ResumeController : Controller
+    {
+        private readonly ResumeDbContext _context;
+
+        private readonly IWebHostEnvironment _webHost;
+
+
+
+
+        public ResumeController(ResumeDbContext context, IWebHostEnvironment webHost)
+        {
+            _context = context;
+            _webHost = webHost;
+
+        }
+        public IActionResult Index()
+        {
+            List<Applicant> applicants;
+            applicants = _context.Applicants.ToList();
+            return View(applicants);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            Applicant applicant = new Applicant();
+            applicant.Experiences.Add(new Experience() { ExperienceId = 1 });
+            
+            return View(applicant);
+        }
+
+
+        [HttpPost]
+        public IActionResult Create(Applicant applicant)
+        {
+
+            string uniqueFileName = GetUploadedFileName(applicant);
+            applicant.PhotoUrl = uniqueFileName;
+
+            _context.Add(applicant);
+            _context.SaveChanges();
+            return RedirectToAction("index");
+
+        }
+
+
+        private string GetUploadedFileName(Applicant applicant)
+        {
+            string uniqueFileName = null;
+
+            if (applicant.ProfilePhoto != null)
+            {
+                string uploadsFolder = Path.Combine(_webHost.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + applicant.ProfilePhoto.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    applicant.ProfilePhoto.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
+        }
+
+
+
+
+    }
+}
+
+
+25. The Javascript of Index.cshtml is below. 
+
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+	<script type="text/javascript">		
+		$(".custom-file-input").on("change", function () {
+			var fileName = $(this).val().split("\\").pop();
+			$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+		});
+
+
+
+		function DeleteItem(btn) {
+			$(btn).closest('tr').remove();
+		}
+
+
+
+		function AddItem(btn) {
+
+			var table = document.getElementById('ExpTable');
+			var rows = table.getElementsByTagName('tr');
+
+			var rowOuterHtml = rows[rows.length - 1].outerHTML;
+
+			var lastrowIdx = document.getElementById('hdnLastIndex').value;
+
+			var nextrowIdx = eval(lastrowIdx) + 1;
+
+			document.getElementById('hdnLastIndex').value = nextrowIdx;
+
+			rowOuterHtml = rowOuterHtml.replaceAll('_' + lastrowIdx + '_', '_' + nextrowIdx + '_');
+			rowOuterHtml = rowOuterHtml.replaceAll('[' + lastrowIdx + ']', '[' + nextrowIdx + ']');
+			rowOuterHtml = rowOuterHtml.replaceAll('-' + lastrowIdx, '-' + nextrowIdx);
+
+
+			var newRow = table.insertRow();
+			newRow.innerHTML = rowOuterHtml;
+
+
+
+			var btnAddID = btn.id;
+			var btnDeleteid = btnAddID.replaceAll('btnadd', 'btnremove');
+
+			var delbtn = document.getElementById(btnDeleteid);
+			delbtn.classList.add("visible");
+			delbtn.classList.remove("invisible");
+
+
+			var addbtn = document.getElementById(btnAddID);
+			addbtn.classList.remove("visible");
+			addbtn.classList.add("invisible");
+
+		}
+
+	</script>
+}

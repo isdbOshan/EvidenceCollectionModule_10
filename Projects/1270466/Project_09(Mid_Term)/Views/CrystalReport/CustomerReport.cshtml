@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Project_09_Mid_Term_.Models.Customer>
+@{
+    ViewBag.Title = "CustomerReport";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <h3>Customers</h3>
+
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th></th>
+                    <th>Customer Name</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr id="tr_@c.CustomerId" style="vertical-align:middle">
+                       
+                        <td>@c.CustomerName</td>
+                        <td>@c.phone</td>
+                        <td>@c.Address</td>
+
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-12 text-center">
+        @Html.ActionLink("To PDF", "CustomerPDF", "CrystalReport", new { }, new { @class = "btn btn-primary btn-sm" })
+        @Html.ActionLink("To Excel", "CustomerExcel", "CrystalReport", new { }, new { @class = "btn btn-secondary btn-sm" })
+    </div>
+</div>
+
+
